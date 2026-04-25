@@ -1,6 +1,14 @@
 {
   "name": "canva-web",
   "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit"
+  },
   "dependencies": {
     "@emotion/babel-plugin": "11.13.5",
     "@emotion/css": "11.13.5",
@@ -88,17 +96,6 @@
     "w3c-keyname": "2.2.8",
     "yup": "1.6.1",
     "zustand": "5.0.5"
-  },
-  "pnpm": {
-    "overrides": {
-      "react": "^19.2.0",
-      "react-dom": "^19.2.0",
-      "@types/react": "^19.2.6",
-      "@types/react-dom": "^19.2.3"
-    }
-  },
-  "scripts": {
-    "start": "next start"
   },
   "devDependencies": {
     "@types/nodemailer": "^6.4.14",
